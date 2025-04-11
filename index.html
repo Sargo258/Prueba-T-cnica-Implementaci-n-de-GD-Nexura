@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trámite de Asignación de Nomenclatura | Alcaldía de Macondo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Alcaldía de Macondo</h1>
+        <p>Secretaría de Planeación</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>Trámite: Certificación de Asignación de Nomenclatura</h2>
+            <p>
+                Para continuar con el trámite debe diligenciar el siguiente formulario y cargar los documentos
+                requeridos:
+            </p>
+            <ul>
+                <li>Recibo de pago ($18.442, consignar en Banco de Bogotá: <strong>Cuenta Corriente No.
+                        18105544-3</strong>)</li>
+                <li>Licencia de construcción</li>
+                <li>Formulario diligenciado</li>
+            </ul>
+        </section>
+
+        <form id="nomenclatureForm">
+            <h3>Formulario de Solicitud</h3>
+
+            <label>Primer nombre*:</label>
+            <input type="text" name="primerNombre" required>
+
+            <label>Segundo nombre:</label>
+            <input type="text" name="segundoNombre">
+
+            <label>Primer apellido*:</label>
+            <input type="text" name="primerApellido" required>
+
+            <label>Segundo apellido:</label>
+            <input type="text" name="segundoApellido">
+
+            <label>Correo electrónico*:</label>
+            <input type="email" name="email" required>
+
+            <label>Número de teléfono de contacto*:</label>
+            <input type="tel" name="telefono" required>
+
+            <label>Tipo de documento*:</label>
+            <select name="tipoDocumento" required>
+                <option value="">Seleccione</option>
+                <option value="cc">Cédula de Ciudadanía</option>
+                <option value="ce">Cédula de Extranjería</option>
+            </select>
+
+            <label>Número de documento*:</label>
+            <input type="text" name="numeroDocumento" required>
+
+            <label>Descripción*:</label>
+            <textarea name="descripcion" rows="5" required></textarea>
+
+
+            <label>Acepto los términos y condiciones de uso de mis datos personales:</label>
+            <input type="checkbox" required>
+
+            <label>Cargar Recibo de Pago:</label>
+            <input type="file" accept=".pdf,.jpg,.png" required>
+
+            <label>Cargar Licencia de Construcción:</label>
+            <input type="file" accept=".pdf,.jpg,.png" required>
+
+            <button type="submit">Radicar Trámite</button>
+        </form>
+
+        <div id="successMessage" class="hidden">
+            <h4>✅ Trámite radicado exitosamente</h4>
+            <p>Nos comunicaremos con usted cuando el certificado esté listo.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Alcaldía de Macondo</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
